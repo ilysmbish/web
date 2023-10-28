@@ -45,7 +45,7 @@ const projects = [
         name: "TailwindCSS",
       },
     ],
-    demoLink: "https://socializerme.vercel.app/",
+    demoLink: "no",
     repoLink: "https://github.com/janaiscoding/socializer/",
     variant: "fromLeft",
     image: socializer,

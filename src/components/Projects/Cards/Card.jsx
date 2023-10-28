@@ -39,7 +39,7 @@ const Card = ({ project }) => {
           target="_blank"
           rel="noreferrer"
           className="font-overpass600 text-2xl"
-          href={project.demoLink}
+          href={project.demoLink!="no"?project.demoLink:project.repoLink}
         >
           {project.title}
         </a>
@@ -56,11 +56,11 @@ const Card = ({ project }) => {
           ))}
         </ul>
         <div className="flex self-center md:self-start gap-9">
-          <Button
+          {project.demoLink!=="no"?<Button
             content={"Demo"}
             linkTo={project.demoLink}
             selector={"live"}
-          />
+          />:<></>}
           <Button
             content={"Repo"}
             linkTo={project.repoLink}

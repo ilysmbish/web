@@ -10,7 +10,6 @@ import WatermarkTopMobile from "../UI_elements/WMTopMobile";
 import WatermarkBottomMobile from "../UI_elements/WMBottomMobile";
 import Card from "./Cards/Card";
 import projects from "./assets/projects";
-import Button from "../Button/Button";
 
 const fromLeft = {
   visible: {
@@ -53,9 +52,9 @@ const Projects = () => {
       <div className="flex flex-col gap-6 px-6 md:max-w-6xl md:mx-auto pb-[10vh] pt-[15vh]">
         <motion.div variants={fromLeft} initial="hidden" animate={controls}>
           <Heading title={"Projects"} linkTo={"/#projects"} />
-          {/* <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4 pl-2 md:pl-6">
+          <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4 pl-2 md:pl-6">
             Some of my personal favorites!
-          </h1> */}
+          </h1>
         </motion.div>
         <div className="projects-wrapper flex flex-col gap-14">
           {projects.map((project) => (
